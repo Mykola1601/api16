@@ -1,3 +1,3 @@
-# TODO APP 
+# TODO APP
 
-[live](https://todoapp.com)
+[Live example](https://todo-app-goit.onrender.com)

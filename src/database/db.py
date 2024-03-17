@@ -1,7 +1,6 @@
-
 import contextlib
 
-from sqlalchemy.ext.asyncio import AsyncEngine, async_sessionmaker, create_async_engine
+from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession, async_sessionmaker, create_async_engine
 
 from src.conf.config import config
 
@@ -32,6 +31,3 @@ sessionmanager = DatabaseSessionManager(config.DB_URL)
 async def get_db():
     async with sessionmanager.session() as session:
         yield session
-
-
-
